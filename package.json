@@ -1,6 +1,6 @@
 {
   "name": "dasiweb",
-  "homepage": "dasiusp.github.io/DASIReactWeb",
+  "homepage": "https://dasiusp.github.io/DASIReactWeb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
