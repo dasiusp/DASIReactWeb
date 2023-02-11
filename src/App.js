@@ -1,31 +1,25 @@
-import React, { useState } from "react";
-import Expenses from "./components/Expenses/Expenses";
-import NewExpense from "./components/NewExpense/NewExpense";
+import logo from './logo.svg';
+import './App.css';
 
-const DUMMY_EXPENSES = [
-  {
-    id: Math.random().toString(),
-    title: "Pokémon Violet",
-    amount: 300.0,
-    date: new Date(2022, 10, 18),
-  },
-];
-
-const App = () => {
-  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
-
-  const addExpenseHandler = (expense) => {
-    setExpenses((prevExpenses) => {
-      return [expense, ...prevExpenses];
-    });
-  };
-
+function App() {
   return (
-    <div>
-      <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses items={expenses} />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
-};
+}
 
 export default App;
